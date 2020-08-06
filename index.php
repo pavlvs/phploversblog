@@ -1,17 +1,10 @@
-<?php include 'libraries/Database.php' ?>
-<?php include 'helpers/format_helper.php' ?>
 <?php include 'includes/header.inc.php' ?>
 <?php
-// Create DB object
-$db = new Database();
-
-// create query
+// create posts query
 $sql = 'SELECT * FROM posts';
-
 // run the query
 $posts = $db->select($sql);
 ?>
-
 <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
   <div class="col-md-6 px-0">
     <h1 class="display-4 font-italic">Lots of PHP love</h1>
