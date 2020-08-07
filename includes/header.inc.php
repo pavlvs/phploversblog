@@ -1,3 +1,4 @@
+<?php include 'config/config.inc.php'; ?>
 <?php include 'libraries/Database.php' ?>
 <?php include 'helpers/format_helper.php' ?>
 <?php

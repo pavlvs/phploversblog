@@ -1,7 +1,7 @@
 <?php include 'includes/header.inc.php' ?>
 <?php
 // create posts query
-$sql = 'SELECT * FROM posts';
+$sql = 'SELECT * FROM posts ORDER BY `date` DESC';
 // run the query
 $posts = $db->select($sql);
 ?>

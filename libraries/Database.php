@@ -1,5 +1,4 @@
 <?php
-include 'config/config.inc.php';
 
 class Database
 {

@@ -1,15 +1,15 @@
 <?php include 'includes/header.inc.php' ?>
 <?php
 // create query
-$sql = 'SELECT *
-        FROM posts';
+$sql = "SELECT * FROM posts";
 
 if (isset($_GET['category'])) {
   $categoryId = urldecode($_GET['category']);
 
   // append to query
-  $sql .= ' WHERE category = ' . $categoryId;
+  $sql .= " WHERE category = " . $categoryId;
 }
+$sql .= " ORDER BY `date` DESC";
 
 // run the query
 $posts = $db->select($sql);
